@@ -5,24 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EducaIFS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <header class="header">
+      <h1>EducaIFS</h1>
+    </header>
+    <main>
+      <div id="chat"></div>
+    </main>
+    <footer>
+      <p>
+        Desenvolvido por
+        <a href="https://franciscochaves.com.br" target="_blank"
+          >Francisco Chaves</a
+        >
+      </p>
+    </footer>
+
     <script
       src="https://unpkg.com/blip-chat-widget"
       type="text/javascript"
     ></script>
-    <script>
-      (function () {
-        window.onload = function () {
-          new BlipChat()
-            .withAppKey(
-              'cm91dGVyZWR1Y2FpZnM6NDQ3MDI1YjAtZjIzOS00NTU3LWI1MWMtYWY0YmE2NTgwNjNk'
-            )
-            .withButton({ color: '#3aa852', icon: '' })
-            .withCustomCommonUrl('https://chat.blip.ai/')
-            .build();
-        };
-      })();
-    </script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

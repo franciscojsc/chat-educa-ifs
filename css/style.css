@@ -1,0 +1,22 @@
+:root {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.header {
+  color: #666;
+}
+
+iframe {
+  min-height: 75vh;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  header,
+  main,
+  footer {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
